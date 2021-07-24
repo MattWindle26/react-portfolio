@@ -10,7 +10,13 @@ function App() {
   return (
     <div className="container grid main-grid">     
     <aside>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Slack_Technologies_Logo.svg" alt="" />
+        {/* <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Slack_Technologies_Logo.svg" alt="" /> */}
+
+        <svg viewBox="0 0 184 184" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M45.9619 137.886C20.5779 112.502 20.5779 71.346 45.9619 45.9619V45.9619C71.346 20.5779 112.502 20.5779 137.886 45.9619L173.241 81.3173C179.099 87.1751 179.099 96.6726 173.241 102.53L137.886 137.886C112.502 163.27 71.346 163.27 45.9619 137.886V137.886Z" fill="#017AFF" />
+          <path d="M77.665 60.5703L93.1875 104.398L108.627 60.5703H124.979V121H112.487V104.481L113.732 75.9683L97.4209 121H88.8711L72.6016 76.0098L73.8467 104.481V121H61.3955V60.5703H77.665Z" fill="white" />
+        </svg>
+
         <h6>menu</h6>
         <nav>
           <ul>
@@ -24,7 +30,7 @@ function App() {
         <nav>
           <ul>
             <li><a href=""><span>React blog</span></a></li>
-            <li><a href=""><span>React blog</span></a></li>
+            <li><a href=""><span>React Covid app</span></a></li>
             <li><a href="" ><span>React blog</span></a></li>
             <li><a href=""><span>React blog</span></a></li>
           </ul>

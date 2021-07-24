@@ -4,3 +4,4 @@ This is just a simple react project which will serve as my personal portfolio.
 ## Things to add
 - Database driven projects
 - NodeJS Backend to handle requests
+- Create custom admin panel to add projects
