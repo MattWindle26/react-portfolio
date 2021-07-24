@@ -1,0 +1,43 @@
+main{
+    padding-top: calc(var(--spacing) * 3);
+}
+main h3{
+    text-transform: uppercase;
+    margin-bottom: var(--spacing);
+}
+
+.most-recent-project{
+    border-radius: var(--spacing);
+    height: 280px;
+    width: 100%;
+    max-width: 600px;
+    background-size: cover;
+    background-position: center;
+
+}
+.mrp-overlay{
+    padding: var(--spacing) calc(var(--spacing) * 2) calc(var(--spacing) * 2) calc(var(--spacing) * 2) ;
+    background: rgb(29,36,45);
+    background: linear-gradient(90deg, rgba(52,63,78,1) 0%, rgba(44,54,66,0.8127626050420168) 35%, rgba(29,36,45,0.29175420168067223) 100%);
+    border-radius: var(--spacing);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.mrp-overlay h2, .mrp-overlay p{
+    color: var(--white);
+    line-height: 1.5;
+    font-weight: 500;
+}
+.mrp-overlay p{
+    font-weight: 300;
+    margin-bottom: var(--spacing);
+    flex: 1;
+}
+.mrp-btns .btn{
+    margin-right: var(--spacing);
+}
+.mrp-btns .btn.btn.border-white{
+    color: var(--white);
+}

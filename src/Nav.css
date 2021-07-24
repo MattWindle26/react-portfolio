@@ -1,0 +1,37 @@
+nav{
+    margin-bottom: calc(var(--spacing) * 2);
+}
+av ul li{
+    margin-bottom: var(--spacing);
+}
+nav ul li a{
+    margin-bottom: var(--spacing);
+    width: 100%;
+    display: block;
+    font-weight: 500;
+    color: var(--darker-grey);
+    position: relative;
+    
+}
+nav ul li a.active{
+    color: var(--blue);
+}
+
+nav ul li a.active:after{
+    content: "";
+    display: block;
+    background-color: var(--blue);
+    width: 3px;
+    height: 30px;
+    border-radius: 10px;
+    position: absolute;
+    right: -40px;
+    top: -5px;
+}
+nav ul li a span{
+    display: block;
+    transition: transform 0.25s ease;
+}
+nav ul li a:hover span{
+    transform: translateX(10px);
+}

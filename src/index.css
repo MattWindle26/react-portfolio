@@ -1,13 +1,104 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap');
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+:root{
+  --darker-grey: #8B8F94;
+  --dark-grey: #F5F5F5;
+  --light-grey: #FCFBFC;
+  --blue: #017AFF;
+  --off-blue: #E3EEFC;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  --black: #333;
+  --white: #FFF;
+
+  --spacing: 20px;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  padding: calc(var(--spacing) * 4);
+  background-color: var(--dark-grey);
+}
+
+h1{
+  font-size: 4rem;
+}
+h2{
+  font-size: 5rem;
+}
+h3{
+  font-size: 2rem;
+}
+
+p, li, a{
+  font-size: 1.6rem;
+}
+p span, li span, a span{
+  font-size: inherit;
+}
+ul{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+}
+
+.container{
+  width: 100%;
+  max-width: 1440px;
+  background-color: var(--white);
+  height: 100vh;
+  margin: 0 auto;
+}
+aside, main{
+  padding: calc(var(--spacing) * 2);
+}
+aside{
+  background-color: var(--light-grey);
+}
+aside h6{
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: var(--darker-grey);
+  font-weight: 300;
+  margin-bottom: var(--spacing);
+  text-transform: uppercase;
+}
+aside img{
+  width: 100%;
+  max-width: 150px;
+  margin-bottom: calc(var(--spacing) * 2);
+
+}
+.grid{
+  display: grid;
+}
+.main-grid{
+  grid-template-columns: 225px 9fr;
+}
+
+.btn{
+  padding: 10px var(--spacing);
+  border-radius: var(--spacing);
+  display: inline-block;
+  font-weight: 500;
+  transition: transform 0.25s ease;
+}
+.btn:hover{
+  transform: translateY(-4px);
+}
+.btn.blue{
+  background-color: var(--blue);
+  color: var(--white);
+  border: 2px solid var(--blue);
+}
+.btn.border-white{
+  border: 2px solid var(--white);
 }
