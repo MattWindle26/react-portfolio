@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import './App.css';
 import './Nav.css';
 import './Main.css';
+import './ProfileCard.css';
 
 function App() {
   
@@ -39,7 +40,7 @@ function App() {
         </nav>
     </aside>
     <main>
-        <h3>Most recent project</h3>
+        <h3 className="title">Most recent project</h3>
         <div className="most-recent-project large" style={{ backgroundImage: "url(" + Background + ")" }}>
           <div className="mrp-overlay">
               <h2>React blog</h2>
@@ -50,7 +51,8 @@ function App() {
               </div>
           </div>
         </div>
-        <h3>Recent projects</h3>
+
+        <h3 className="title">Recent projects</h3>
         <div className="grid recent-projects-grid">
           <div>
             <div className="most-recent-project small" style={{ backgroundImage: "url(" + Background + ")" }}></div>
@@ -64,8 +66,18 @@ function App() {
             <div className="most-recent-project small" style={{ backgroundImage: "url(" + Background + ")" }}></div>
             <h2>React Covid App</h2>
           </div>
-
         </div>
+
+    <div className="profile-card">
+          <img src="https://lh3.googleusercontent.com/PKRoIWUndvfFZmbQgvkIXd87OBPF8OnbGjIodz41ULOUm9-QF0jrVg_omqirZH872eIMEeSXQ9AE5uuALBj4ObLQ3AMNvlJBW2ivFwxkIlLu_4dwPGRsas5LgXho_0zCjRQbov9dl9zJsQTnpP_RbNku-vMjPXaMiPwE8bdhVDTfq1hBILFr6Qc-aPLpawJl-Uy0_QmyZriMA1iUzRtoXImVIP3qs_GwS_GW2Z75wzl4O0xh2q68L25wo2OsJOuqXkNaj45oEDKP-Hs_WdKi_ywC9WiAV1FIOX33vTB9WLBVuUXqasMk-aiu_32-OoiLqwTgDg9Wh3ekcN63UTsSKZEO94wdWilhBmO933LIR9nhdmgrKaxJHTviBp-1XW4p1raR0woA0fJyaRuf0oyGo2GUttn3KrMcA0u9AdBRQyjE4PKMOFnScwP8TdYs0zmW7TAlsQJ5EocRTCrGYVeO1BeIlszLY4bzHfHsDveW7pAZSa9WFWhM7mfgfMn82ZWR3A08KMkf4m2oLIMhXSy8T_M9LrY3SII7FclBx5S94E2r3y0ZAhiFRa05EMP0z41KuYLwOrHsCPPG1CXg8UCuaEkTKJXyYBKzz2dulABmWEiNz95CWR2KHQTFJl7-uSGa3k9_qWkj2j6JguQ9AU9nWt2dE80Em5kuhqS1jJ3ASBW1E402ZAa1xplZYLnw7GML5vpMVtqnMayB_jeW6tdP=w675-h898-no?authuser=0" alt="" />
+      <h3>Matt Windle</h3>
+      <p>Web devloper & designer</p>
+      <ul>
+            <li><a href="https://github.com/MattWindle26">github.com/MattWindle26</a></li>
+            <li><a href="https://www.instagram.com/mattwindle26/">instagram.com/mattwindle26/</a></li>
+      </ul>
+    </div>
+
     </main>
     </div>
   );
