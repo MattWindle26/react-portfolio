@@ -8,13 +8,21 @@ main h3{
 
 .most-recent-project{
     border-radius: var(--spacing);
-    height: 280px;
-    width: 100%;
-    max-width: 600px;
     background-size: cover;
     background-position: center;
-
+    margin-bottom: var(--spacing);
 }
+.most-recent-project.large{
+    width: 100%;
+    height: 280px;
+    max-width: 600px;
+}
+.most-recent-project.small{
+    width: 100%;
+    height: 180px;
+    max-width: 200px;
+}
+
 .mrp-overlay{
     padding: var(--spacing) calc(var(--spacing) * 2) calc(var(--spacing) * 2) calc(var(--spacing) * 2) ;
     background: rgb(29,36,45);
@@ -24,8 +32,9 @@ main h3{
     width: 100%;
     display: flex;
     flex-direction: column;
+    transition: all 0.25s ease;
 }
-.mrp-overlay h2, .mrp-overlay p{
+.most-recent-project.large .mrp-overlay h2, .most-recent-project.large .mrp-overlay p{
     color: var(--white);
     line-height: 1.5;
     font-weight: 500;
@@ -40,4 +49,23 @@ main h3{
 }
 .mrp-btns .btn.btn.border-white{
     color: var(--white);
+}
+
+.recent-projects-grid{
+    width: 100%;
+    max-width: 600px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.most-recent-project.small, .most-recent-project.small + h2{
+    transition: transform 0.25s ease;
+}
+.most-recent-project.small + h2{
+    font-size: 1.6rem;
+    line-height: 0;
+}
+.most-recent-project.small:hover, .most-recent-project.small:hover + h2, .most-recent-project.small + h2:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
 }
