@@ -19,8 +19,8 @@ main h3.title{
 }
 .most-recent-project.small{
     width: 100%;
-    min-height: 200px;
-    max-width: 200px;
+    min-height: 180px;
+    width: 100%;
 }
 
 .mrp-overlay{

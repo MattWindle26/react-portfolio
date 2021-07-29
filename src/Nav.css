@@ -1,17 +1,17 @@
 nav{
     margin-bottom: calc(var(--spacing) * 2);
 }
-av ul li{
+nav ul li{
     margin-bottom: var(--spacing);
+    display: flex;
+    align-items: center
 }
 nav ul li a{;
     width: 100%;
     display: block;
     font-weight: 500;
     color: var(--darker-grey);
-    position: relative;
-    padding-bottom: var(--spacing);
-    
+    position: relative;    
 }
 nav ul li a.active{
     color: var(--blue);
@@ -34,4 +34,9 @@ nav ul li a span{
 }
 nav ul li a:hover span{
     transform: translateX(10px);
+}
+
+nav .bi{
+    font-size: 1.6rem;
+    margin-right: 10px;
 }
