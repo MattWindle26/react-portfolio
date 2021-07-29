@@ -15,7 +15,7 @@
   --blue: #017AFF;
   --off-blue: #E3EEFC;
 
-  --black: #333;
+  --black: rgb(32, 32, 32);
   --white: #FFF;
 
   --spacing: 20px;
@@ -101,4 +101,12 @@ aside img, aside svg{
 }
 .btn.border-white{
   border: 1px solid var(--white);
+}
+
+main{
+  display: flex;
+}
+main > .home-projects{
+  flex: 1;
+  padding-right: var(--spacing);
 }
