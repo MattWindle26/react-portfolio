@@ -1,0 +1,32 @@
+{
+    "project": {
+        "name": "Project one",
+        "date": "Jan 2021",
+        "tech": [
+            {
+                "name": "React"
+            },
+            {
+                "name": "HTML"
+            },
+            {
+                "name": "CSS"
+            }
+        ]
+    },
+    "project": {
+        "name": "Project two",
+        "date": "Jan 2020",
+        "tech": [
+            {
+                "name": "Vue"
+            },
+            {
+                "name": "HTML"
+            },
+            {
+                "name": "CSS"
+            }
+        ]
+    },
+}
